@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Never Gonna Give You Up Views</title>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous"></script>
+
+  	<script type="text/javascript">
+  		var url = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=dQw4w9WgXcQ&key=AIzaSyBZ2-UmwBPD39sY4jByCTBAWQiIluskV5w'
+  		$.getJSON(url, function(data) {
+  			console.log(data);
+			console.log(data.items[0].statistics.viewCount)
+
+			$("#views").text(data.items[0].statistics.viewCount);
+  		});
+  	</script>
+</head>
+<body>
+	<h1>People Have Gotten Rickrolled <span id="views"></span> Times since October 25th, 2009</h1>
+
+<style type="text/css">
+	body{
+		font-family: 'Comic Sans MS';
+		text-align: center;
+		background-color: lightgrey;
+		
+	}
+
+	h1{
+		margin-top: 5vw;
+	}
+</style>
+
+</body>
+</html>
