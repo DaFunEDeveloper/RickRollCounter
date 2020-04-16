@@ -14,12 +14,14 @@
 			console.log(data.items[0].statistics.viewCount)
 
 			$("#views").text(data.items[0].statistics.viewCount);
+			$("#sad").text(data.items[0].statistics.dislikeCount);
   		});
   	</script>
 </head>
 <body>
 	<h1>People Have Gotten Rickrolled <span id="views"></span> Times since October 25th, 2009</h1>
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Here to Add to the Counter!</a>
+	<h1> <span id="sad"></span> Kids thought they were getting free Robux/V-Bucks and Disliked It</h1>
 
 <style type="text/css">
 	body{
